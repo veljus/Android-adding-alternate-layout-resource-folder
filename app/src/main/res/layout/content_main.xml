@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:background="@drawable/pozadinav">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imBCameraV"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imBGolfV"
+        android:src="@drawable/golfv"
+        android:layout_alignTop="@+id/imBCameraV"
+        android:layout_alignRight="@+id/imBPecanjeV"
+        android:layout_alignEnd="@+id/imBPecanjeV" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imBPecanjeV"
+        android:src="@drawable/pecanjev"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imBReketV"
+        android:src="@drawable/badmintonv"
+        android:layout_alignTop="@+id/imBPecanjeV"
+        android:layout_alignRight="@+id/imBCameraV"
+        android:layout_alignEnd="@+id/imBCameraV" />
+</RelativeLayout>
